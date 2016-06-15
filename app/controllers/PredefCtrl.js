@@ -1,14 +1,21 @@
-app.controller("PreloadCtrl", function(StarterCards, $scope){
+app.controller("PredefCtrl", ["$scope", "StarterCards",
+ function($scope, StarterCards){
 	console.log("PreloadCtrl loaded");
-	$scope.searchActivityCards = "";
-	$scope.activities = [];
+	$scope.parseActivityCards = "";
+	$scope.activities = [{
+		name: "",
+		time: "",
+		cost: "",
+		location: "",
+		description: ""
+	}];
 
-	$scope.activityCards = []
 
 	$scope.searchActivities = function(){
 		console.log("searchActivities");
-		$scope.activities = activitySet;
-	StarterCards.getCards($scope.searchActivityCards);
-	$scope.activities = activitySet
-	}
+	StarterCards.getCards($scope.parseActivityCards)
+	.then(function(activitySet){
+	$scope.activities = activitiess;
 	});
+	};
+	}]);

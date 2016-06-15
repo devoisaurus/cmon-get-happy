@@ -22,21 +22,32 @@
 
 		<h4>Cmon, get happy! - A self-care resource</h4>
 
-	<div ng-controller="PreloadCtrl">
-		<div class="container<">
-			<div class="activityCard">
-				
+	<div ng-controller="PredefCtrl">
+		<div class="container">
+			<div class="activityDisplay">
+				<div ng-repeat="activity in activities">
+					<div class="activityCard">
+					<h6>{{activity.name}}</h6>
+					<h6>{{activity.time}}</h6>
+					<h6>{{activity.cost}}</h6>
+					<h6>{{activity.location}}</h6>
+					<h6>{{activity.description}}</h6>
+					<button>Add to my cards</button>
+				</div>
 			</div>
 		</div>
 
 
 
 	</div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/bower_components/Materialize/dist/js/materialize.min.js"></script>
   <script src="lib/bower_components/angular/angular.min.js"></script>
+
 	<script type="text/javascript" src="app/app.js"></script>
+
   <script type="text/javascript" src="app/factories/StarterCards.js"></script>
+
 	<script type="text/javascript" src="app/controllers/PredefCtrl.js"></script>
 
 </body>
