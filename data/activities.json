@@ -5,105 +5,120 @@
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "outdoors",
-			"description": "Take a walk! Find a park to walk through. If you don't have a park nearby, walk around your neighborhood."
+			"description": "Take a walk! Find a park to walk through. If you don't have a park nearby, walk around your neighborhood.",
+			"public": true
 		},
 		"activity02": {
 			"name": "Do a mini de-clutter",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Remove three things you no longer wear from your wardrobe to donate."
+			"description": "Remove three things you no longer wear from your wardrobe to donate.",
+			"public": true
 		},
 		"activity03": {
 			"name": "Visit a museum",
 			"time": "90 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Take in an exhibit at a museum"
+			"description": "Take in an exhibit at a museum",
+			"public": true
 		},
 		"activity04": {
 			"name": "At home mini-spa",
 			"time": "60 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Take a long bubble bath, give yourself a mani/pedi!"
+			"description": "Take a long bubble bath, give yourself a mani/pedi!",
+			"public": true
 		},
 		"activity05": {
 			"name": "Shake it out!",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Put on your favorite music and dance around your room!"
+			"description": "Put on your favorite music and dance around your room!",
+			"public": true
 		},
 		"activity06": {
 			"name": "Naptime!",
 			"time": "60 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Take a quick nap. You'll wake up feeling refreshed."
+			"description": "Take a quick nap. You'll wake up feeling refreshed.",
+			"public": true
 		},
 		"activity07": {
 			"name": "Meditate",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Take a moment(or more) to simply focus on breathing and being still."
+			"description": "Take a moment(or more) to simply focus on breathing and being still.",
+			"public": true
 		},
 		"activity08": {
 			"name": "Cloud-watch",
 			"time": "20 minutes",
 			"cost": "$",
 			"location": "outdoors",
-			"description": "Go outside, lie on your back, and watch the clouds."
+			"description": "Go outside, lie on your back, and watch the clouds.",
+			"public": true
 		},
 		"activity09": {
 			"name": "Massage",
 			"time": "60 minutes",
 			"cost": "$$$",
 			"location": "indoors",
-			"description": "Book a relaxing massage"
+			"description": "Book a relaxing massage",
+			"public": true
 		},
 		"activity10": {
 			"name": "Watch a movie",
 			"time": "90 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Catch a movie in theaters, or curl up with Netflix"
+			"description": "Catch a movie in theaters, or curl up with Netflix",
+			"public": true
 		},
 		"activity11": {
 			"name": "Hiking",
 			"time": "60 minutes",
 			"cost": "$",
 			"location": "outdoors",
-			"description": "Go for a short(or long) hike!"
+			"description": "Go for a short(or long) hike!",
+			"public": true
 		},
 		"activity12": {
 			"name": "Yoga!",
 			"time": "60 minutes",
 			"cost": "$$",
 			"location": "indoors",
-			"description": "Take in a yoga class"
+			"description": "Take in a yoga class",
+			"public": true
 		},
 		"activity13": {
 			"name": "Get crafty!",
 			"time": "30 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Knit, sculpt, paint, etc."
+			"description": "Knit, sculpt, paint, etc.",
+			"public": true
 		},
 		"activity14": {
 			"name": "Tea",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Make a hot cup of tea."
+			"description": "Make a hot cup of tea.",
+			"public": true
 		},
 		"activity15": {
 			"name": "Journal",
 			"time": "15 minutes",
 			"cost": "$",
 			"location": "indoors",
-			"description": "Take 15 minutes to write in a journal."
+			"description": "Take 15 minutes to write in a journal.",
+			 "public": true
 		}
 	}
 

@@ -25,14 +25,12 @@
 	<div ng-controller="PredefCtrl">
 			<div class="activityDisplay">
 				<div ng-repeat="activity in activities">
-						<div class="col s4" ng-repeat="(key, value) in activity[0]">
 						<div class="activityCard">
-							<div class="singleActivity">
-							<h6>Activity: {{value.name}}</h6>
-							<h6>Cost: {{value.cost}}</h6>
-							<h6>Time: {{value.time}}</h6>
-							<h6>Location: {{value.location}}</h6>
-							<h6>Description: {{value.description}}</h6>
+							<h6>Activity: {{activity.name}}</h6>
+							<h6>Cost: {{activity.cost}}</h6>
+							<h6>Time: {{activity.time}}</h6>
+							<h6>Location: {{activity.location}}</h6>
+							<h6>Description: {{activity.description}}</h6>
 							<button ng-click="addCard()">Add to my cards</button>
 						</div>
 					</div>
