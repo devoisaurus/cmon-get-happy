@@ -1,62 +1,62 @@
 {
-	"activities": [{
-		"activity1": {
+	"activities": {
+		"activity01": {
 			"name": "Take a walk",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "outdoors",
 			"description": "Take a walk! Find a park to walk through. If you don't have a park nearby, walk around your neighborhood."
 		},
-		"activity2": {
+		"activity02": {
 			"name": "Do a mini de-clutter",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
 			"description": "Remove three things you no longer wear from your wardrobe to donate."
 		},
-		"activity3": {
+		"activity03": {
 			"name": "Visit a museum",
 			"time": "90 minutes",
 			"cost": "$",
 			"location": "indoors",
 			"description": "Take in an exhibit at a museum"
 		},
-		"activity4": {
+		"activity04": {
 			"name": "At home mini-spa",
 			"time": "60 minutes",
 			"cost": "$",
 			"location": "indoors",
 			"description": "Take a long bubble bath, give yourself a mani/pedi!"
 		},
-		"activity5": {
+		"activity05": {
 			"name": "Shake it out!",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
 			"description": "Put on your favorite music and dance around your room!"
 		},
-		"activity6": {
+		"activity06": {
 			"name": "Naptime!",
 			"time": "60 minutes",
 			"cost": "$",
 			"location": "indoors",
 			"description": "Take a quick nap. You'll wake up feeling refreshed."
 		},
-		"activity7": {
+		"activity07": {
 			"name": "Meditate",
 			"time": "10 minutes",
 			"cost": "$",
 			"location": "indoors",
 			"description": "Take a moment(or more) to simply focus on breathing and being still."
 		},
-		"activity8": {
+		"activity08": {
 			"name": "Cloud-watch",
 			"time": "20 minutes",
 			"cost": "$",
 			"location": "outdoors",
 			"description": "Go outside, lie on your back, and watch the clouds."
 		},
-		"activity9": {
+		"activity09": {
 			"name": "Massage",
 			"time": "60 minutes",
 			"cost": "$$$",
@@ -105,6 +105,6 @@
 			"location": "indoors",
 			"description": "Take 15 minutes to write in a journal."
 		}
-	}]
+	}
 
 }

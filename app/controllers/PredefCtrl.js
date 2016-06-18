@@ -12,4 +12,21 @@ app.controller("PredefCtrl", ["$scope", "StarterCards",
 	});
 	};
 	$scope.getActivities();
+
+	$scope.addCard = function(){
+		console.log("activities", $scope.activities);
+		var activitiesObject =
+			JSON.stringify({
+					activity: $scope.activities.activity,
+					cost: $scope.activities.cost,
+					time: $scope.activities.time,
+					location: $scope.activities.location,
+					description: $scope.activities.description
+				})
+		console.log("activitiesfire", activitiesObject);
+		StarterCards.addCardToFirebase(activitiesObject)
+		.then(function successCallback(response){
+		console.log("clicked");
+		});
+	}
 	}]);
