@@ -23,19 +23,17 @@
 		<h4>Cmon, get happy! - A self-care resource</h4>
 
 	<div ng-controller="PredefCtrl">
-		<div class="container">
 			<div class="activityDisplay">
-				<div ng-repeat="activity in activityObject">
-					<div class="activityCard">
-					<h6>{{activity.name}}</h6>
-					<h6>{{activity.time}}</h6>
-					<h6>{{activity.cost}}</h6>
-					<h6>{{activity.location}}</h6>
-					<h6>{{activity.description}}</h6>
-					<button>Add to my cards</button>
+				<div ng-repeat="activity in activities">
+						<ul ng-repeat="(key, value) in activity[0]">
+						<div class="activityCard">
+							<li class="singleActivity"><h6>{{key}}: {{value}}</h6></li>
+							<button>Add to my cards</button>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+
 
 
 

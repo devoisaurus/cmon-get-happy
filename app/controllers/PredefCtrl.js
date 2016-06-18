@@ -1,18 +1,14 @@
 app.controller("PredefCtrl", ["$scope", "StarterCards",
  function($scope, StarterCards){
-	$scope.activities = {
-		name: "",
-		time: "",
-		cost: "",
-		location: "",
-		description: ""
-	};
-
 
 	$scope.getActivities = function(){
 	StarterCards.getCards($scope.activities)
-	.then(function(activitySet){
-	$scope.activities = activitySet;
+	.then(function(data){
+	$scope.activities = [];
+	for (var key in data)
+		data[key].id = key
+	$scope.activities.push(data[key]);
+	console.log("activities", data);
 	});
 	};
 	$scope.getActivities();

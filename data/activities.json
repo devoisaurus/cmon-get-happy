@@ -1,5 +1,5 @@
 {
-	"activities": {
+	"activities": [{
 		"activity1": {
 			"name": "Take a walk",
 			"time": "10 minutes",
@@ -105,6 +105,6 @@
 			"location": "indoors",
 			"description": "Take 15 minutes to write in a journal."
 		}
-	}
+	}]
 
 }
