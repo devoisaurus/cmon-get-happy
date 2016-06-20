@@ -5,24 +5,39 @@ app.factory("StarterCards", function($q, $http){
 		var activities = [];
 			return $q(function(resolve, reject){
 				$http.get("https://cmon-get-happy.firebaseio.com/activities.json")
-				.success(function(data){
-			 resolve(data);
-				}, function(error){
-			reject(error);
+				.success(function(activitiesObject){
+			   var activityList = activitiesObject;
+			   Object.keys(activityList).forEach(function(key){
+			   	activityList[key].id = key;
+			   	activities.push(activityList[key]);
+			   });
+			   resolve(activities);
+				})
+				.error(function(error){
+					reject(error)
 				});
 			});
 		};
-		var addCardToFirebase = (function(activities){
-			console.log("activitiesfire", activities);
-			return $q(function(resolve,reject){
-				$http.post(`https://cmon-get-happy.firebaseio.com/activities.json`)
-				.success(function(objectFromFirebase){
-					resolve(objectFromFirebase)
+
+		var addCardtoFirebase = function(activity){
+			return $q(function(resolve, reject){
+				$http.post("https://cmon-get-happy.firebaseio.com/activities.json",
+					JSON.stringify({
+						cost: activity.cost,
+						name: activity.name,
+						description: activity.description,
+						location: activity.location,
+						time: activity.time,
+						public: true
+					})
+				)
+			.success(
+				function(objectFromFirebase){
+					resolve(objectFromFirebase);
 				}
 				);
 			});
-		}
-	)
+		};
 
-	return {getCards:getCards, addCardToFirebase:addCardToFirebase};
+	return {getCards:getCards, addCardtoFirebase:addCardtoFirebase};
 });
