@@ -1,3 +1,5 @@
+"use strict"
+
 app.controller("PredefCtrl", function($scope, $http, StarterCards){
 	$scope.activities = [];
 
@@ -6,8 +8,16 @@ app.controller("PredefCtrl", function($scope, $http, StarterCards){
 		$scope.activities = activityList
 	})
 
-	StarterCards.addCardtoFirebase($scope.activities).then(function successCallback(response){
-		console.log("activitiesadd", $scope.activities);
-		console.log(response);
-	})
+$scope.addCard = function(activity){
+	let selectedActivity = {
+		cost:activity.cost,
+		description:activity.description,
+		location:activity.location,
+		name:activity.name,
+		public:true,
+		time:activity.time
+	}
+
+	StarterCards.addCardtoFirebase(selectedActivity);
+}
 });

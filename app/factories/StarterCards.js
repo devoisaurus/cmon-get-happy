@@ -22,14 +22,7 @@ app.factory("StarterCards", function($q, $http){
 		var addCardtoFirebase = function(activity){
 			return $q(function(resolve, reject){
 				$http.post("https://cmon-get-happy.firebaseio.com/activities.json",
-					JSON.stringify({
-						cost: activity.cost,
-						name: activity.name,
-						description: activity.description,
-						location: activity.location,
-						time: activity.time,
-						public: true
-					})
+					JSON.stringify(activity)
 				)
 			.success(
 				function(objectFromFirebase){
