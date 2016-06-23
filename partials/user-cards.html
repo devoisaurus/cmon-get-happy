@@ -1,0 +1,14 @@
+	<div ng-controller="UserCardsCtrl">
+			<div class="activityDisplay">
+				<div ng-repeat="activity in activities">
+						<div class="activityCard">
+							<h6>Activity: {{activity.name}}</h6>
+							<h6>Cost: {{activity.cost}}</h6>
+							<h6>Time: {{activity.time}}</h6>
+							<h6>Location: {{activity.location}}</h6>
+							<h6>Description: {{activity.description}}</h6>
+							<button ng-click="addCard(activity)">Add to my cards</button>
+						</div>
+					</div>
+				</div>
+				</div>

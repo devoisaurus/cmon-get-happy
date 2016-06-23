@@ -10,48 +10,30 @@
 			<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body ng-app="GetHappy">
-	  <nav ng-controller="NavigationCtrl">
-    	<div class="nav-wrapper">
-      	<a href="#" class="brand-logo">C'mon, get happy!</a>
-      		<ul id="nav-mobile" class="right hide-on-med-and-down" ng-repeat="link in navLinks">
-        		<li><a href="#">{{link.name}}</a></li>
-      		</ul>
-    	</div>
-  	</nav>
+	<body ng-app="GetHappy">
+	<div ng-include="partials/nav-bar.html" ng-controller="NavigationCtrl"></div>
+
 
 		<h4>Cmon, get happy! - A self-care resource</h4>
 
-	<div ng-controller="PredefCtrl">
-			<div class="activityDisplay">
-				<div ng-repeat="activity in activities">
-						<div class="activityCard">
-							<h6>Activity: {{activity.name}}</h6>
-							<h6>Cost: {{activity.cost}}</h6>
-							<h6>Time: {{activity.time}}</h6>
-							<h6>Location: {{activity.location}}</h6>
-							<h6>Description: {{activity.description}}</h6>
-							<button ng-click="addCard(activity)">Add to my cards</button>
-						</div>
-					</div>
-				</div>
-				</div>
+			<div class="main-container" ng-view>
+			</div>
+		
+		<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+	  <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+	  <script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+	  <script type="text/javascript" src="lib/bower_components/firebase/firebase.js"></script>
+  	<script type="text/javascript" src="lib/bower_components/angularfire/dist/angularfire.min.js"></script>
+ 	 <script type="text/javascript" src="lib/bower_components/Materialize/dist/js/materialize.min.js"></script>
 
+		<script type="text/javascript" src="app/app.js"></script>
 
+		<script type="text/javascript" src="app/controllers/PredefCtrl.js"></script>
+		<script type="text/javascript" src="app/controllers/NavCtrl.js"></script>
+		<!-- // <script type="text/javascript" src="app/controllers/LoginCtrl.js"></script> -->
 
+		<!-- // <script type="text/javascript" src="app/factories/AuthFactory.js"></script> -->
+		<script type="text/javascript" src="app/factories/StarterCards.js"></script>
 
-	</div>
-	<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="lib/bower_components/Materialize/dist/js/materialize.min.js"></script>
-  <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
-  <script type="text/javascript" src="lib/bower_components/firebase/firebase.js"></script>
-  <script type="text/javascript" src"lib/bower_components/angularfire/dist/angularfire.min.js"></script>
-
-	<script type="text/javascript" src="app/app.js"></script>
-
-  <script type="text/javascript" src="app/factories/StarterCards.js"></script>
-
-	<script type="text/javascript" src="app/controllers/PredefCtrl.js"></script>
-
-</body>
+	</body>
 </html>
